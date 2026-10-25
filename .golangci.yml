@@ -1,0 +1,15 @@
+version: "2"
+linters:
+  enable:
+    - revive
+  settings:
+    revive:
+      rules:
+        - name: exported
+        - name: package-comments
+    staticcheck:
+      dot-import-whitelist:
+        - github.com/gomlx/gomlx/core/graph
+  exclusions:
+    presets:
+      - std-error-handling
